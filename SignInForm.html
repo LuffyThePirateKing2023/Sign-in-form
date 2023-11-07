@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>SignIn Form</title>
+</head>
+<body>
+    <div class="wrapper-front" id="form1">
+        <form action="#" class="logIn-section" id="logIn-section">
+            <h2>Sign in your Account</h2>
+
+            <div class="input-class">
+                <input type="text" id="username" class="username input" autocomplete="off" required>
+                <label for="username" class="label-input">Username</label>
+            </div>
+
+            <div class="input-class">
+                <input type="password" id="password" class="password input" autocomplete = "off" required>
+                <label for="password" class="label-input">Password</label>
+                <i class="fa-solid fa-eye-slash" id="eye-button"></i>
+             </div>
+
+             <a href="#"><p class="forgot-pass">Forgot password?</p></a>
+
+             <div class="submit-button">
+             <button class="logIn signUp" id="logIn">Log In</button>
+             </div>
+
+             <p class="horizontalLine">OR</p>
+
+             <div class="social-account">
+                <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-google fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+             </div>
+        </form>
+        <div class="SignUp-section panel" id="panel1">
+            <h2>Dont have an account?</h2>
+            <p>Don't worry it free for lifetime!</p>
+
+            <button id="signupbtn" class="logIn signUp">Signup</button>
+
+        </div>
+    </div>
+    <div class="wrapper-back hidden" id="form2">
+        <div class="SignIn-section panel" id="panel2">
+            <h2>Already have an account?</h2>
+            <button class="logIn signUp" id="signInBtn">Sign In</button>
+        </div>
+        <form action="#" class="signUp-form" id="form-2">
+            <h2>Please Register in this form</h2>
+            <div class="signUp-form">
+                <div class="input-class-new">
+                    <input type="text" class="email input-new" id="email" autocomplete="off" required>
+                    <label for="email" class="lblemail label" id="lblemail">Email</label>
+                </div>
+                <p id="erremail" class="errmsg"></p>
+
+                <div class="input-class-new">
+                    <input type="text" class="user input-new" id="user" autocomplete="off" required>
+                    <label for="user" class="lbluser label" id="lbluser">Username</label>
+                </div>
+                <p id="erruser" class="errmsg"></p>
+
+                <div class="input-class-new">
+                    <input type="password" class="signIn-pass input-new" id="signIn-pass" autocomplete="off" required>
+                    <label for="signIn-pass" class="lblpass label" id="lblpass">Password</label>
+                    <i class="fa-solid fa-eye-slash" id="eye-button-new"></i>
+                </div>
+                <p id="errpass" class="errmsg"></p>
+
+                <div class="input-class-new">
+                    <input type="password" class="signIn-verifypass input-new" id="signIn-verifypass" autocomplete="off" required>
+                    <label for="signIn-verifypass" class="lblpass label" id="lblpass">Verify password</label>
+                    <i class="fa-solid fa-eye-slash" id="eye-button-verify"></i>
+                </div>
+                <p id="errverifypass" class="errmsg"></p>
+
+                <button class="logIn signUp" id="regBtn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
